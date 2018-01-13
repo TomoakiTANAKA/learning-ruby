@@ -2,3 +2,5 @@ learning-ruby.iml
 .idea
 .bundle/
 ruby/
+
+foo.sqlite3

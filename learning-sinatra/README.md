@@ -1,3 +1,13 @@
+# web service with sinatra
+
+sinatraを使ったWebサービス
+
+## 実行方法
+```
+bundle exec ruby src/main.js -p 3001
+```
+
+localhost:3001にアクセスできればOK
 
 ### 新規ライブラリ追加
 
@@ -9,6 +19,7 @@ cd path/to/learning-sinatora
 bundle install --path=./
 ```
 
+## 開発Tips
 ### 新規ファイル追加
 
 インストールgemからrequireを行うための設定が必要。
@@ -16,9 +27,4 @@ bundle install --path=./
 ```
 require "rubygems"
 require "bundler/setup"
-```
-
-### 実行方法
-```
-bundle exec ruby hoge.rb
 ```
