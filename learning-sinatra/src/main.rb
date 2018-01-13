@@ -13,6 +13,7 @@ end
 
 get '/' do
   @now = Time.now
+  @contacts = Contact.all
   erb :index
 end
 

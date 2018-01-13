@@ -28,3 +28,10 @@ bundle install --path=./
 require "rubygems"
 require "bundler/setup"
 ```
+
+## TODO
+
+- [ ] scssの導入
+- [ ] haml導入
+- [ ] typescript導入
+- [ ] erbの分割

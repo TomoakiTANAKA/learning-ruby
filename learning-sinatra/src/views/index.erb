@@ -13,6 +13,24 @@
     <a href="/contact_new">連絡先を追加</a>
   </div>
 
+  <table border="1">
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>名前</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.id %></td>
+        <td><%= contact.name %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+
   <footer>
     <a href="about.html">このページについて</a>
   </footer>

@@ -171,5 +171,37 @@ D, [2018-01-13T16:21:15.644717 #98079] DEBUG -- :    (0.6ms)  commit transaction
 bundle exec rake db:create_migration NAME=create_users
 
 
+active recordとは
+Rubyからデータベースの操作を簡単に行うためのライブラリ。ORマッパー。
+素のSQLを書かなくても大丈夫
+
+モデル = テーブル
+インスタンス = レコード
+
+select  find,all
+insert  create,save
+update  update,save
+delete  delete,destroy
+
 参考
+github sinatra-activerecord
 https://github.com/janko-m/sinatra-activerecord
+
+
+* active recordそのもの
+* migration
+- 仕組み
+- 追加・削除
+* validation
+
+------
+###
+migration
+
+共同開発
+DBの変更を管理して、共有する
+DBを直接いじらない
+migrateファイルが全ての変更を管理したものになってる
+
+共有DB→NG。変わっちゃうと別の人が動かせなく鳴る
+エクスポートして云々。→NG。同時にやるのとどうなる？本番でもできるの
